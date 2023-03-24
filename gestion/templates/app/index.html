@@ -1,12 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hola</h1>
-</body>
-</html>
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+<div class="slider-principal">
+    <div class="slideshow">
+        <div class="imagen-slider">
+            <img src="{% static 'app/img/foto-1.jpeg' %}" alt="">
+            <div class="texto-slider">
+                <h1 class="">Encuentro de brigadas</h1>
+                <a class="btn btn-primary w-10" href="">Haz click aquí para saber más</a>
+            </div>
+        </div>
+        <div class="imagen-slider">
+            <img src="{% static 'app/img/unidades/unidad-34.JPEG' %}" alt="">
+            <div class="texto-slider">
+                <h1 class="">Conoce nuestras unidades</h1>
+                <a class="btn btn-primary w-10" href="">Haz click aquí para saber más</a>
+            </div>
+            
+            
+        </div>        
+    </div>
+</div>
+<div class="noticias w-100">
+    <div class="container-fluid">
+        <div class="container">
+            <h1>Noticias</h1>
+            <a class="subtitle" href=""><h2><svg class="svg-inline--fa fa-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>Revisa todas nuestras noticias</h2></a>
+            <div class="row">
+                <div class="slider-noticias">
+                    <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
+                        <div class="inner-box">
+                            <h2>Lorem, ipsum dolor sit</h2>
+                            <a class="btn btn-primary w-10" href="">Leer más</a>
+                        </div>                
+                    </div>
+                    <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
+                        <div class="inner-box">
+                            <h2>Lorem, ipsum dolor sit</h2>
+                            <a class="btn btn-primary w-10" href="">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
+                        <div class="inner-box">
+                            <h2>Lorem, ipsum dolor sit</h2>
+                            <a class="btn btn-primary w-10" href="">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
+                        <div class="inner-box">
+                            <h2>Lorem, ipsum dolor sit</h2>
+                            <a class="btn btn-primary w-10" href="">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="div-up white-path" style="position: relative;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="sc-ftTHYK eQza-DA"><path d="M-1.12,106.08 C190.18,-131.73 270.31,134.70 500.56,84.38 L500.00,150.00 L0.00,150.00 Z"></path></svg>
+      </div> -->
+      <div class="div-up green-path" style="position: relative;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="sc-ftTHYK eQza-DA"><path d="M-1.12,106.08 C190.18,-131.73 270.31,134.70 500.56,84.38 L500.00,150.00 L0.00,150.00 Z"></path></svg>
+      </div>
+</div>
+<div class="banner-lema">
+    
+    <div class="container d-flex flex-column justify-content-center h-100 align-items-center">
+        <h1>Conoce nuestra historia.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente minima rem soluta perspiciatis, voluptatum repellat quos necessitatibus est. Atque autem cum, error accusantium iusto vero! Voluptates nam eligendi itaque sunt.</p>    
+        <a class="btn btn-primary w-10" href="">Conocer Más</a>
+    </div>
+    
+    
+    <div class="div-down green-path" style="position: relative;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="sc-ftTHYK eQza-DA"><path d="M-1.12,106.08 C190.18,-131.73 270.31,134.70 500.56,84.38 L500.00,150.00 L0.00,150.00 Z"></path></svg>
+      </div>
+</div>
+<div class="destacado">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
+                <h1 class="texto-instagram">Siguenos en instagram!</h1>
+                <p class="parrafo-instagram">Aquí podrás ver todas nuestras publicaciones y formar parte de nuestra comunidad.</p>                
+                <a class="btn instagram-btn btn-primary" href="">@bombalandeta_120</a>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+                <iframe style="border-radius: 10px" src="https://www.instagram.com/bombalandeta_120/embed" width="400" height="500" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+            </div>
+        </div>
+    </div>    
+</div>
+
+
+
+<script>
+    
+    $(document).ready(function(){
+        $('.slideshow').slick({
+            autoplay: true
+        });
+
+        $('.slider-noticias').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+    });
+
+    
+		
+</script>
+
+{% endblock %}

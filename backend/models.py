@@ -6,7 +6,7 @@ class Bombero(AbstractUser):
 
     USERNAME_FIELD = 'email'
 
-    REQUIRED_FIELDS = ('primer_nombre', 'primer_apellido', 'segundo_apellido', 'rut', 'cargo',)
+    REQUIRED_FIELDS = ('primer_nombre', 'primer_apellido', 'segundo_apellido', 'rut', 'cargo','username')
 
     id = models.AutoField(primary_key=True, unique=True)
     primer_nombre = models.CharField(max_length=30)
