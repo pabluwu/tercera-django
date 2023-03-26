@@ -1,0 +1,84 @@
+.encuentro{
+    background-image:linear-gradient(#000000a6, #000000a6 ) , url(../img/encuentro_brigadas/encuentro_banner.jpg);
+    background-blend-mode: hard-light;
+    background-position: center;
+    padding: 100px 0;
+}
+.parrafo-banner-brigada {
+    margin: 40px auto;
+}
+.cuerpo-encuentro{
+    padding: 50px 0;
+}
+.cuerpo-encuentro .container{
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px;
+}
+.cuerpo-encuentro h2, .cuerpo-encuentro p{
+    margin: 40px 0;
+}
+.slider-item-encuentro{
+    padding: 20px;
+}
+.slider-item-encuentro img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+.arrow-prev-encuentro,.arrow-next-encuentro{
+    font-size: 30px;
+}
+
+.inscripcion_encuentro{
+    height: 100vh;
+    padding: 40px;
+}
+.inscripcion_encuentro .container{
+    background-color: #fff;
+    border-radius: 15px;
+}
+.inscripcion_encuentro .container h2{
+    margin: 40px auto; 
+}
+.pasos-inscripcion{
+    display: inline-block;
+}
+.formulario_inscripcion_brigada{
+    display: inline-block;
+    text-align: start;
+}
+.box-pasos{
+    background-color: #00360e !important;
+    border-radius: 0 0 0 15px;
+
+}
+.box-pasos, .box-form{
+    padding: 40px 20px;
+}
+.box-pasos p, .box-pasos ol{
+    color: white;
+}
+.box-pasos span{
+    font-weight: bold;
+    color: #00ff2f;
+    text-decoration: underline 1px #00ff2f;
+}
+.box-pasos h2{
+    margin: 10px !important;
+}
+.box-pasos img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.box-form{
+    border-top: solid 1px;
+}
+.box-form img{
+    margin-top: 50px;
+    width: auto;
+    height: 150px;
+}
+

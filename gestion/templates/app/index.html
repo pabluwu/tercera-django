@@ -6,12 +6,19 @@
 
 
 <div class="slider-principal">
+    <div class="arrow-prev-principal">
+        <i class="fa-solid fa-chevron-left"></i>
+    </div>
+    <div class="arrow-next-principal">
+        <i class="fa-solid fa-chevron-right"></i>
+    </div>
     <div class="slideshow">
+        
         <div class="imagen-slider">
             <img src="{% static 'app/img/foto-1.jpeg' %}" alt="">
             <div class="texto-slider">
                 <h1 class="">Encuentro de brigadas</h1>
-                <a class="btn btn-primary w-10" href="">Haz click aquí para saber más</a>
+                <a class="btn btn-primary w-10" href="/encuentro-brigada">Haz click aquí para saber más</a>
             </div>
         </div>
         <div class="imagen-slider">
@@ -25,45 +32,53 @@
         </div>        
     </div>
 </div>
-<div class="noticias w-100">
+<div class="noticias">
     <div class="container-fluid">
-        <div class="container">
-            <h1>Noticias</h1>
-            <a class="subtitle" href=""><h2><svg class="svg-inline--fa fa-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>Revisa todas nuestras noticias</h2></a>
-            <div class="row">
-                <div class="slider-noticias">
-                    <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
-                        <div class="inner-box">
-                            <h2>Lorem, ipsum dolor sit</h2>
-                            <a class="btn btn-primary w-10" href="">Leer más</a>
-                        </div>                
+        <h1>Noticias</h1>
+        <a class="subtitle" href=""><h2><svg class="svg-inline--fa fa-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>Revisa todas nuestras noticias</h2></a>
+        <div class="row">
+            <div class="slider-noticias">
+                <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
+                    <div class="inner-box">
+                        <h2>Lorem, ipsum dolor sit</h2>
+                        <a class="btn btn-primary w-10" href="">Leer más</a>
+                    </div>                
+                </div>
+                <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
+                    <div class="inner-box">
+                        <h2>Lorem, ipsum dolor sit</h2>
+                        <a class="btn btn-primary w-10" href="">Leer más</a>
                     </div>
-                    <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
-                        <div class="inner-box">
-                            <h2>Lorem, ipsum dolor sit</h2>
-                            <a class="btn btn-primary w-10" href="">Leer más</a>
-                        </div>
+                </div>
+                <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
+                    <div class="inner-box">
+                        <h2>Lorem, ipsum dolor sit</h2>
+                        <a class="btn btn-primary w-10" href="">Leer más</a>
                     </div>
-                    <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
-                        <div class="inner-box">
-                            <h2>Lorem, ipsum dolor sit</h2>
-                            <a class="btn btn-primary w-10" href="">Leer más</a>
-                        </div>
-                    </div>
-                    <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
-                        <div class="inner-box">
-                            <h2>Lorem, ipsum dolor sit</h2>
-                            <a class="btn btn-primary w-10" href="">Leer más</a>
-                        </div>
+                </div>
+                <div class="box-noticia" style="background-image: linear-gradient(#00000059, #00000059 ), url({% static 'app/img/noticia.jpg' %});">
+                    <div class="inner-box">
+                        <h2>Lorem, ipsum dolor sit</h2>
+                        <a class="btn btn-primary w-10" href="">Leer más</a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="box-arrows">
+            <div class="arrow-prev-news">
+                
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="arrow-next-news">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        
     </div>
     <!-- <div class="div-up white-path" style="position: relative;">
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="sc-ftTHYK eQza-DA"><path d="M-1.12,106.08 C190.18,-131.73 270.31,134.70 500.56,84.38 L500.00,150.00 L0.00,150.00 Z"></path></svg>
       </div> -->
-      <div class="div-up green-path" style="position: relative;">
+      <div class="div-up green-path" style="position: relative;     bottom: -100px;">
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="sc-ftTHYK eQza-DA"><path d="M-1.12,106.08 C190.18,-131.73 270.31,134.70 500.56,84.38 L500.00,150.00 L0.00,150.00 Z"></path></svg>
       </div>
 </div>
@@ -102,10 +117,15 @@
     
     $(document).ready(function(){
         $('.slideshow').slick({
-            autoplay: true
+            nextArrow: '.arrow-next-principal',
+            prevArrow: '.arrow-prev-principal',
+            autoplay: true,
+            
         });
 
         $('.slider-noticias').slick({
+            nextArrow: '.arrow-next-news',
+            prevArrow: '.arrow-prev-news',
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 3

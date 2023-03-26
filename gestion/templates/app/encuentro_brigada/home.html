@@ -1,0 +1,64 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<div class="encuentro">
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-lg-12 col-sm-12 text-center">
+                
+                <div class="container">
+                    <h1>Bienvenido a nuestro Encuentro de Brigadas Juveniles</h1>
+                    <p class="parrafo-banner-brigada text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tenetur autem ab a quasi sequi explicabo et sunt amet vel corrupti dolorum natus possimus eaque, itaque, praesentium quidem soluta adipisci!</p>
+                    <a class="btn btn-primary w-10" href="/encuentro-brigada">Desliza para saber más</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cuerpo-encuentro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 text-center" style="border-right: solid 0.5px black;">
+                <h2 class="text-dark p-10">Información del encuentro</h2>
+                <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis, harum repellendus quod expedita, dolor incidunt minus ex quis itaque quo voluptatem architecto nihil doloribus beatae! Perferendis voluptas omnis quibusdam.</p>
+                <a class="btn btn-primary w-10" href="/encuentro-brigada/inscripcion" target="_blank">Inscribete aquí</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 text-center" >
+                <h2 class="text-dark">Revisa imagenes de encuentros pasados.</h2>
+                <div class="arrows-encuentro d-flex justify-content-around">
+                    <div class="arrow-prev-encuentro">
+                            
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="arrow-next-encuentro">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="slick-encuentro">
+                    <div class="slider-item-encuentro">
+                        <img src="{% static 'app/img/noticia.jpg'%}" alt="">
+                    </div>
+                    <div class="slider-item-encuentro">
+                        <img src="{% static 'app/img/noticia.jpg'%}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.slick-encuentro').slick({
+            nextArrow: '.arrow-next-encuentro',
+            prevArrow: '.arrow-prev-encuentro',
+            dots: true,
+            autoplay: true,
+            
+        });
+    });
+</script>
+{% endblock %}

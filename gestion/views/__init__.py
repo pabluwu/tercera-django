@@ -1,2 +1,2 @@
 from .base import *
-from .intranet import *
+from .encuentro_brigada import *

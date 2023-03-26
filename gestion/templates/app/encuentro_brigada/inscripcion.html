@@ -1,0 +1,86 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<div class="encuentro">
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-lg-12 col-sm-12 text-center">
+                
+                <div class="container">
+                    <h1>Inscribete a nuestro encuentro</h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="inscripcion_encuentro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 text-center">
+                <h2 class="text-dark">Para poder inscribirte debes seguir los siguientes pasos:</h2>
+                <div class="row">
+                    <div class="box-pasos col-lg-6 col-sm-12">
+                        <ol class="pasos-inscripcion text-start">
+                            <li><p>Descargar y rellenar el presente <span><a href=""> <span> Documento </span></a></span></p></li>
+                            <li><p>Rellenar el siguiente formulario</p></li>
+                            <li><p>Y listo, ya estarás inscrito y pronto recibirás un correo de confirmación</p></li>
+                        </ol>
+                        <h2>Gracias por Inscribirte!</h2>
+                        <img src="{% static 'app/img/encuentro_brigadas/tercerin_brigada.png' %}" alt="">
+                    </div>
+                    <div class="box-form d-flex flex-column justify-content-center col-lg-6 col-sm-12">
+                        {% load crispy_forms_tags %}
+                        <form enctype="multipart/form-data" action="" class="formulario_inscripcion_brigada" id="formulario_inscripcion_brigada" method="POST" >
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    {{ form.cuerpo_bomberos | as_crispy_field }}
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    {{ form.compañia | as_crispy_field }}
+                                </div>    
+                                <div class="col-lg-6 col-sm-12">
+                                    {{ form.nombre_a_cargo | as_crispy_field }}
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    {{ form.telefono | as_crispy_field }}
+                                </div>           
+                                    <div class="col-lg-6 col-sm-12">
+                                    {{ form.email | as_crispy_field }}        
+                                </div> 
+                                <div class="col-lg-6 col-sm-12">
+                                    {{ form.documento | as_crispy_field }}                                   
+                                </div>
+                            
+                            </div>
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                            {{ mensaje }}
+                            
+                        </form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="{% static 'app/img/encuentro_brigadas/logo_brigada.png' %}" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="{% static 'app/img/logo_negro.png' %}" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script></script>
+
+{% endblock %}

@@ -24,3 +24,12 @@ class Citacion(models.Model):
     nombre = models.CharField(max_length=30, blank=None)
     fecha = models.DateTimeField(blank=None)
     descripcion = models.TextField(max_length=250, blank=None)
+
+class InscripcionEncuentroBrigada(models.Model):
+    id = models.AutoField(primary_key=True, unique=True)
+    cuerpo_bomberos = models.CharField(max_length=30, blank=None)
+    compañia = models.CharField(max_length=30, blank=None)
+    nombre_a_cargo = models.CharField(max_length=30, blank=None)
+    telefono = models.CharField(max_length=9, unique=True)
+    email = models.EmailField(max_length=30, unique=True)
+    documento = models.FileField(upload_to='uploads/inscripciones_encuentro_brigadas/')
